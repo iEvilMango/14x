@@ -16,9 +16,10 @@ public class Advanced {
 		// the only one that java mandates be used is the test, as
 		// otherwise it just doesn't make sense. As such,
 		// you __can__ make a for loop like this, but it is ridiculously
-		// bad style to (it's effectively equivalent to a while loop,
+		// bad style to do so (it's effectively equivalent to a while loop,
 		// and a while loop won't make those reading your code as sad.)
 		for(; true ;) {
+			System.out.println();
 			// switch statement; basically, give in a value and it checks
 			// until they match. If it doesn't match any, this will go to
 			// default. Each case must be unique; i.e. you can't have two
@@ -39,6 +40,7 @@ public class Advanced {
                		break;
                	case "try / catch" : 
                		tryCatch();
+               		break;
 				case "quit": 
 					System.out.println("goodbye!");
 					// ends the program. fairly easy 
@@ -70,13 +72,16 @@ public class Advanced {
 		System.out.println("firstNum > 5 ? \"It is!\": \"It is not!\"");
 		System.out.println("Assuming there exists an int firstNum.");
 		System.out.println("Now, give me two numbers, one at a time.");
+
 		int secondNum = console.nextInt();
 		int thirdNum = console.nextInt();
+
 		System.out.println("Assuming you have stored those numbers as"
 					+ "secondNum and thirdNum, evaluate");
 		System.out.println("secondNum > thirdNum ? thirdNum > 5 ? 4 : thirdNum"
 							+ " : secondNum > 6 ? secondNum : -5");
 		System.out.println("[Type in your answer to continue]");
+
 		int userAnswer = console.nextInt();
 		int actualAnswer = secondNum > thirdNum ? thirdNum > 5 ? 4 : 
 							thirdNum  : secondNum > 6 ? secondNum : -5;
@@ -91,6 +96,16 @@ public class Advanced {
 	*/
 	public static void tryCatch() {
 		Scanner console = new Scanner(System.in);
-
+		System.out.println("Try / catch blocks are used to handle exceptions"
+							+ " without crashing the program.");
+		System.out.println("The basic syntax is as follows:");
+		System.out.println("\ntry {\n\t//stuff\n} catch(Exception "
+							+ "e){\n\t//other stuff\n}");
+		System.out.println("How this works, is somewhat like an if / else if");
+		System.out.println("First, it tries to run the 'try' block");
+		System.out.println("If that fails at any point, java will skip to");
+		System.out.println("the appropriate catch branch.");
+		System.out.println("It is better style to catch specific Exceptions, as in");
+		System.out.println("...} catch(IllegalArgumentException illegal) {...}");
 	}
 }
