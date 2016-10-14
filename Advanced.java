@@ -36,8 +36,12 @@ public class Advanced {
 					break;
 				case "show ternary example":
 					ternary();
+               		break;
+               	case "try / catch" : 
+               		tryCatch();
 				case "quit": 
 					System.out.println("goodbye!");
+					// ends the program. fairly easy 
 					System.exit(1);
 				default:
 					System.out.println("That didn't match"); 
@@ -47,7 +51,7 @@ public class Advanced {
 
 	/*
 	Shows example of how the ternary operator is used, printing example to
-	console.
+	console, and taking in user input to make it interactive
 	*/
 	public static void ternary() {
 		Scanner console = new Scanner(System.in);
@@ -55,12 +59,38 @@ public class Advanced {
 							+ "works");
 		System.out.print("Give a number for the example ");
 		int firstNum = console.nextInt();
-		System.out.println("First, we'll print out whether your number is");
-		System.out.println("greater than 5");
+		System.out.println("First, we'll print out whether your number is"
+							+ "greater than 5");
 		System.out.println(firstNum > 5 ? "It is!": "It is not!");
 
-		System.out.println("That was easy enough. The basic example"
+		System.out.println("That was easy enough. The basic syntax"
 							+ "for the ternary operator is");
-		System.out.println("Test ? result if true : result if false");
+		System.out.println("test ? result if true : result if false");
+		System.out.println("The code for the previous test was ");
+		System.out.println("firstNum > 5 ? \"It is!\": \"It is not!\"");
+		System.out.println("Assuming there exists an int firstNum.");
+		System.out.println("Now, give me two numbers, one at a time.");
+		int secondNum = console.nextInt();
+		int thirdNum = console.nextInt();
+		System.out.println("Assuming you have stored those numbers as"
+					+ "secondNum and thirdNum, evaluate");
+		System.out.println("secondNum > thirdNum ? thirdNum > 5 ? 4 : thirdNum"
+							+ " : secondNum > 6 ? secondNum : -5");
+		System.out.println("[Type in your answer to continue]");
+		int userAnswer = console.nextInt();
+		int actualAnswer = secondNum > thirdNum ? thirdNum > 5 ? 4 : 
+							thirdNum  : secondNum > 6 ? secondNum : -5;
+		System.out.println("the answer is...");
+		System.out.println(actualAnswer);
+		System.out.println(userAnswer == actualAnswer ? "You're right!" : "Not quite :(");
+	}
+
+	/*
+	Shows example of how the try / catch block is used, printing example to
+	console, and taking in user input
+	*/
+	public static void tryCatch() {
+		Scanner console = new Scanner(System.in);
+
 	}
 }
