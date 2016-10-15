@@ -25,7 +25,7 @@ public class Advanced {
 			// default. Each case must be unique; i.e. you can't have two
 			// case "first!!!11"'s. Can match multiple.
 			System.out.print("Give a command (see source code for valid "
-								+ " commands) ");
+								+ " commands, or GitHub README) ");
 			switch (input.nextLine().trim().toLowerCase()) {
 				case "print hello world":
 					System.out.println("hello world!");
@@ -37,6 +37,9 @@ public class Advanced {
 					break;
 				case "ternary":
 					ternary();
+               		break;
+               	case "binary":
+               		binary();
                		break;
                	case "try/catch" : 
                		tryCatch();
@@ -256,6 +259,79 @@ public class Advanced {
 	}
 
 	/*
+	Shows basic example of what binary is, printing example to
+	console, and taking in user input to make it interactive
+	*/
+	public static void binary() {
+		Scanner console = new Scanner(System.in);
+		System.out.println("(Binary is covered in the textbook and"
+							+ " momentarily in 142)");
+		System.out.println("Computers store data as a series of binary values,");
+		System.out.println("represented as 1's and 0's. This is similar to how");
+		System.out.println("we recognize numbers already (in base 10), except");
+		System.out.println("instead of 10 digits, it only uses 2.");
+		waitForUser(console);
+
+		System.out.println("To represent integers, we simply count increasing");
+		System.out.println("powers of 2; for example, 1010 can be read as ");
+		System.out.println("'one 2^3 plus zero 2^2 plus one 2^1 plus zero 2^0'");
+		System.out.println("Much the same way that we can say 536 is just");
+		System.out.println("'five 10^2 plus three 10^1 plus one 10^0'");
+		System.out.println("So how can we convert numbers from base 10 to binary,");
+		System.out.println("and vice - versa?");
+		waitForUser(console);
+
+		System.out.println("Starting off with base 10 to binary;");
+		System.out.println("To me, the easiest way is to find the biggest power");
+		System.out.println("of two that can 'fit inside' the number");
+		System.out.println("So, looking at a number like 295, I count up the powers");
+		System.out.println("1, 2, 4, 8, 16, 32, 64, 128, 256, 512, stop.");
+		System.out.println("The last number can't fit in there, so we don't count it.");
+		System.out.println("But after that, we can just go down the numbers,");
+		System.out.println("adding 1 if we can subtract the number from the starting number");
+		System.out.println("without going negative, and 0 if we cannot.");
+		waitForUser(console);
+
+		System.out.println("So, following this, we have");
+		System.out.println("256 fits in, leaving 39 (result = 1)");
+		System.out.println("128 does not fit in (result = 10)");
+		System.out.println("64 does not fit in(result = 100)");
+		System.out.println("32 fits in, leaving 7 (result = 1001)");
+		System.out.println("16 does not fit in (result = 10010)");
+		System.out.println("8 does not fit in(result = 100100)");
+		System.out.println("4 fits in, leaving 3(result = 1001001)");
+		System.out.println("2 fits in, leaving 1(result = 10010011");
+		System.out.println("1 fits in, leaving 0(final result = 100100111)");
+		System.out.println("[See toBinary(..) method for implementation of "
+				+ "of this method]");
+		waitForUser(console);
+
+		System.out.println("Now, converting binary back to base 10");
+		System.out.println("This is the same algorithm from the start,");
+		System.out.println("where you can just add up the increasing powers");
+		System.out.println("of two, reading from right to left.");
+		System.out.println("In the case of 1101101, ");
+		waitForUser(console);
+
+		System.out.println("We see there is 1 2^0, so we add 1 (result = 1)");
+		System.out.println("We see 0 2^1, so we do not add (result = 1)");
+		System.out.println("We see 1 2^2, so we add 4 (result = 5)");
+		System.out.println("We see 1 2^3, so we add 8 (result = 13)");
+		System.out.println("We see 0 2^4, so we do not add (result = 13)");
+		System.out.println("We see 1 2^5, so we add 32 (result = 45)");
+		System.out.println("We see 1 2^6, so we add 64 (result = 109)");
+		System.out.println("[See toBase10(..) method for implementation of"
+							+ " this method.]");
+	}
+
+	public static void waitForUser(Scanner input) {
+		System.out.println("[enter any String to continue]");
+
+		input.next();
+		System.out.println();
+	}
+
+	/*
 	Converts an integer in base 10 to an integer in binary. Not
 	the best algorithm, but an easier to understand one. Returns
 	the binary representation as a String.
@@ -286,6 +362,9 @@ public class Advanced {
 	*/
 	public static int toBase10(String input) {
 		int output = 0;
+		// in the binary tutorial, we go from right to left, as it's easier
+		// than counting powers. In this case, it doesn't add much complexity
+		// to go from left to right, so I kept it that way.
 		for(int i = 0; i < input.length(); i++) {
 			// when the string has size 1, it represents only the power of 0.
 			int currentPower = input.length() - i - 1;
