@@ -3,7 +3,8 @@ Joseph Wunderlich
 This section constitutes advanced material; do not use this on your
 assignments; it's solely for material that we do not generally cover
 that you might find interesting, as well as some odd java things
-(that you probably shouldn't use, but that it might be useful to know)
+(that you probably shouldn't use, but that it might be useful to know
+for your own purposes)
 */
 
 import java.util.*;
@@ -219,18 +220,40 @@ public class Advanced {
 		System.out.println();
 		System.out.println("More interestingly, these can be stored using "
 							+ "the Runnable interface, as so:");
-		System.out.println("Runnable hello = () -> {System.out.println(\"hello!\"); } ;");
+		System.out.println("Runnable hello = () -> {System.out.print(\"hello!\"); } ;");
 		System.out.println("The Runnable interface requires the method run(), that");
 		System.out.println("'runs' the variable. In this case, what"
 							+ " does hello.run(); print?");
 		System.out.println("[type in the text that hello prints to continue]");
 		boolean correct = "hello!".equals(console.next().trim().toLowerCase());
-		printCorrect(correct);
-		Runnable hello = () -> { System.out.println("hello!"); } ;
+		Runnable hello = () -> { System.out.print("hello!"); } ;
+		System.out.println("answer is...")
 		hello.run();
+		printCorrect(correct);
 
+		System.out.println();
+		System.out.println("This can have some interesting consequences.");
+		System.out.println("Take, for example, the following method");
+		System.out.println("public static void runDouble(Runnable r) {");
+		System.out.println("\tr.run();\n\tr.run();");
+		System.out.println("}");
+		System.out.println("What would that print in this case?");
+		System.out.println("[enter your answer to finish]");
+		correct = "hello!hello!".equals(console.next().trim().toLowerCase());
 
-	}	
+		System.out.println("answer is...")
+		runDouble(hello);
+		printCorrect(correct);
+
+	}
+
+	/*
+	runs a runnable function twice.
+	*/
+	private static void runDouble(Runnable r) {
+		r.run();
+		r.run();
+	}
 
 	/*
 	Converts an integer in base 10 to an integer in binary. Not
