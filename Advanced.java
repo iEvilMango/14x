@@ -230,7 +230,7 @@ public class Advanced {
 		System.out.println("[type in the text that hello prints to continue]");
 		boolean correct = "hello!".equals(console.next().trim().toLowerCase());
 		Runnable hello = () -> { System.out.print("hello!"); } ;
-		System.out.println("answer is...")
+		System.out.println("answer is...");
 		hello.run();
 		printCorrect(correct);
 
@@ -244,7 +244,7 @@ public class Advanced {
 		System.out.println("[enter your answer to finish]");
 		correct = "hello!hello!".equals(console.next().trim().toLowerCase());
 
-		System.out.println("answer is...")
+		System.out.println("answer is...");
 		runDouble(hello);
 		printCorrect(correct);
 
