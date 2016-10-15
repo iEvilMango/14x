@@ -3,7 +3,7 @@ Joseph Wunderlich
 This section constitutes advanced material; do not use this on your
 assignments; it's solely for material that we do not generally cover
 that you might find interesting, as well as some odd java things
-(that you probably shouldn't use, but that it might be useful to know
+(that you probably shouldn't use, but might be useful to know
 for your own purposes)
 */
 
@@ -40,6 +40,9 @@ public class Advanced {
                		break;
                	case "binary":
                		binary();
+               		break;
+               	case "regex":
+               		regex();
                		break;
                	case "try/catch" : 
                		tryCatch();
@@ -322,6 +325,10 @@ public class Advanced {
 		System.out.println("We see 1 2^6, so we add 64 (result = 109)");
 		System.out.println("[See toBase10(..) method for implementation of"
 							+ " this method.]");
+	}
+
+	public static void regex() {
+		// stub stub
 	}
 
 	public static void waitForUser(Scanner input) {
