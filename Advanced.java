@@ -19,7 +19,6 @@ public class Advanced {
 		// bad style to do so (it's effectively equivalent to a while loop,
 		// and a while loop won't make those reading your code as sad.)
 		for(; true ;) {
-			System.out.println();
 			// switch statement; basically, give in a value and it checks
 			// until they match. If it doesn't match any, this will go to
 			// default. Each case must be unique; i.e. you can't have two
@@ -35,11 +34,14 @@ public class Advanced {
 					// not use break statements, as that means you likely
 					// have structured your code incorrectly.
 					break;
-				case "show ternary example":
+				case "ternary":
 					ternary();
                		break;
-               	case "try / catch" : 
+               	case "try/catch" : 
                		tryCatch();
+               		break;
+               	case "xor" :
+               		xor();
                		break;
 				case "quit": 
 					System.out.println("goodbye!");
@@ -48,6 +50,7 @@ public class Advanced {
 				default:
 					System.out.println("That didn't match"); 
 			}
+			System.out.println();
 		}
 	}
 
@@ -87,12 +90,13 @@ public class Advanced {
 							thirdNum  : secondNum > 6 ? secondNum : -5;
 		System.out.println("the answer is...");
 		System.out.println(actualAnswer);
-		System.out.println(userAnswer == actualAnswer ? "You're right!" : "Not quite :(");
+		boolean correct = userAnswer == actualAnswer;
+		printCorrect(correct);
 	}
 
 	/*
 	Shows example of how the try / catch block is used, printing example to
-	console, and taking in user input
+	console, and taking in user input to make it interactive
 	*/
 	public static void tryCatch() {
 		Scanner console = new Scanner(System.in);
@@ -107,5 +111,115 @@ public class Advanced {
 		System.out.println("the appropriate catch branch.");
 		System.out.println("It is better style to catch specific Exceptions, as in");
 		System.out.println("...} catch(IllegalArgumentException illegal) {...}");
+		System.out.println("versus \n...} catch (Exception e) {...}");
+
+		System.out.println("[Give a *negative* number to continue]");
+		int firstNum = console.nextInt();
+		System.out.println("Now, let's try and figure out the output of a block of code.");
+		System.out.println("try {\n\tif(firstNum < 0) {\n\t\tthrow "
+							+ "new IllegalStateException();\n\t} else {");
+		System.out.println("\t\tSystem.out.println(\"one!\");\n\t}\n} catch"
+							+ "(IllegalArgumentException error) {");
+		System.out.println("\tSystem.out.println(\"two!!\");\n} catch"
+							+ "(IllegalStateException otherError) {");
+		System.out.println("\tSystem.out.println(\"three!!!\");\n}");
+		System.out.println("Given that the number you entered is stored as firstNum,");
+		System.out.println("what is printed by the function? [enter the exact String.]");
+		String output = "error";
+		try {
+			if(firstNum < 0) {
+				throw new IllegalStateException();
+			} else {
+				output = "one!";
+			}
+		} catch (IllegalArgumentException error) {
+			output = "two!!";
+		} catch (IllegalStateException otherError) {
+			output = "three!!!";
+		}
+		boolean correct = output.equals(console.next().toLowerCase().trim());
+		System.out.println("correct answer was " + output);
+		printCorrect(correct);
+	}
+
+	/*
+	Shows example of how the try / catch block is used, printing example to
+	console, and taking in user input to make it interactive
+	*/
+	public static void xor() {
+		Scanner console = new Scanner(System.in);
+		System.out.println("xor stands for exclusive or; as in, this "
+							+ "or that, but not both");
+		System.out.println("the xor operator in java is \"^\"");
+		System.out.println("some examples:");
+		System.out.println("true^false = " + (true^false));
+		System.out.println("true^true = " + (true^true));
+		System.out.println("false^false = " + (false^false));
+		System.out.println();
+
+		System.out.println("But this operator is not just defined for booleans;");
+		System.out.println("you can xor int's too.");
+		System.out.println("Examples: ");
+		System.out.println("1^1 = " + (1^1));
+		System.out.println("1^2 = " + (1^2));
+		System.out.println("1^5 = " + (1^5));
+		System.out.println("1^5000 = " + (1^5000));
+		System.out.println("[Enter an integer to continue.]");
+		int num = console.nextInt();
+
+		System.out.println("These values may seem random at first; what java does");
+		System.out.println("is check what things are the not the same in the binary");
+		System.out.println("representation of the number. For example, 1^5 is effectively");
+		System.out.println(" 001");
+		System.out.println("^101");
+		System.out.println("----");
+		System.out.println(" 100");
+		System.out.println(" -> 4 in base 10");
+		System.out.println("As you can see, xor evaluates what spots are different");
+		System.out.println("(where one is a 1 and the other is a 0)");
+		System.out.println("and evaluates the number that is left.");
+		System.out.println("[Enter a 5 digit integer to continue.]");
+		int numTwo = console.nextInt();
+		System.out.println("Assuming the last two numbers you gave over"
+							+ " this example are stored as num and numTwo, respectively,");
+		System.out.println("evaluate num ^ numTwo");
+		System.out.println("hint: the binary represenations are as follows:");
+		System.out.println(num + " is " + toBinary(num));
+		System.out.println(numTwo + " is " + toBinary(numTwo));
+		System.out.println("[enter your answer to continue]");
+		int answer = num ^ numTwo;
+		boolean correct = answer == console.nextInt();
+		System.out.println("Correct answer is " + answer);
+		printCorrect(correct);
+	}
+
+	/*
+	Converts an integer in base 10 to an integer in binary. Not
+	the best algorithm, but an easier to understand one. Returns
+	the binary representation as a String.
+	Only converts positive values to binary.
+	*/
+	public static String toBinary(int input) {
+		int base = 1;
+		while (base < input) {
+			base *= 2;
+		}
+		base /= 2;
+		String output = "";
+		while(base > 0) {
+			if (input - base >= 0) {
+				output += "1";
+				input -= base;
+			} else {
+				output += "0";
+			}
+			base /= 2;
+		}
+		return output;
+	}
+
+	public static void printCorrect(boolean correct) {
+		System.out.println("You got it " + (correct ? "right!" : "wrong :(!"));
+
 	}
 }
