@@ -43,6 +43,9 @@ public class Advanced {
                	case "xor" :
                		xor();
                		break;
+               	case "lambda expressions" :
+               		lambda();
+               		break;
 				case "quit": 
 					System.out.println("goodbye!");
 					// ends the program. fairly easy 
@@ -180,6 +183,7 @@ public class Advanced {
 		System.out.println("and evaluates the number that is left.");
 		System.out.println("[Enter a 5 digit integer to continue.]");
 		int numTwo = console.nextInt();
+
 		System.out.println("Assuming the last two numbers you gave over"
 							+ " this example are stored as num and numTwo, respectively,");
 		System.out.println("evaluate num ^ numTwo");
@@ -192,6 +196,41 @@ public class Advanced {
 		System.out.println("Correct answer is " + answer);
 		printCorrect(correct);
 	}
+
+	/*
+	Shows example of how the lambda expressions are used, printing example to
+	console, and taking in user input to make it interactive.
+	Also known as 'arrow functions' and 'anonymous functions'
+	*Important* Lambda expressions are new to Java 8; previous versions of
+	java will not like this. If that causes trouble with this file,
+	just comment out the contents of this method and leave a stub.
+	*/
+	public static void lambda() {
+		Scanner console = new Scanner(System.in);
+		System.out.println("lambda expressions offer a simple syntax for");
+		System.out.println("declaring 'single use' functions in an efficient way");
+		System.out.println("The syntax for a lambda expression is");
+		System.out.println("argument list -> body of expression ");
+		System.out.println("An example lambda expression for adding"
+							+ "two values would be");
+		System.out.println("(int x, int y) -> x + y;");
+		System.out.println("This takes in two parameters, x and y, and returns their sum");
+
+		System.out.println();
+		System.out.println("More interestingly, these can be stored using "
+							+ "the Runnable interface, as so:");
+		System.out.println("Runnable hello = () -> {System.out.println(\"hello!\"); } ;");
+		System.out.println("The Runnable interface requires the method run(), that");
+		System.out.println("'runs' the variable. In this case, what"
+							+ " does hello.run(); print?");
+		System.out.println("[type in the text that hello prints to continue]");
+		boolean correct = "hello!".equals(console.next().trim().toLowerCase());
+		printCorrect(correct);
+		Runnable hello = () -> { System.out.println("hello!"); } ;
+		hello.run();
+
+
+	}	
 
 	/*
 	Converts an integer in base 10 to an integer in binary. Not
@@ -218,8 +257,21 @@ public class Advanced {
 		return output;
 	}
 
+	/*
+	Converts a String representation of a binary number to the base 10
+	representation of that number. Only works for positive values.
+	*/
+	public static int toBase10(String input) {
+		int output = 0;
+		for(int i = 0; i < input.length(); i++) {
+			// when the string has size 1, it represents only the power of 0.
+			int currentPower = input.length() - i - 1;
+			output += input.charAt(i) == '1' ? Math.pow(2, currentPower) : 0;
+		}
+		return output;
+	}
+
 	public static void printCorrect(boolean correct) {
 		System.out.println("You got it " + (correct ? "right!" : "wrong :(!"));
-
 	}
 }
