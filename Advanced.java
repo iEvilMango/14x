@@ -327,10 +327,15 @@ public class Advanced {
 							+ " this method.]");
 	}
 
+
 	public static void regex() {
 		// stub stub
 	}
 
+	/*
+	prints a request for a response, and eats the next response
+	from the scanner, allowing the user to continue
+	*/
 	public static void waitForUser(Scanner input) {
 		System.out.println("[enter any String to continue]");
 
