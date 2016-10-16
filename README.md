@@ -15,7 +15,9 @@
 
 ### Regular Expressions links
 [Find anything relating to regex!](http://lmgtfy.com/?q=regular+expressions)
+
 [Automatic regex golf player](http://regex.inginf.units.it/golf/)
+
 [Regex tester, with highlight to explain](http://www.regexpal.com/)
 
 
