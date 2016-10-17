@@ -28,6 +28,6 @@
 
 
 
-// toDo: add portion that requires user to write regexes; add markdown starter
+// toDo: add markdown starter
 
 **Starter, not finished** 

@@ -8,6 +8,7 @@ for your own purposes)
 */
 
 import java.util.*;
+import java.util.regex.*;
 
 public class Advanced {
 
@@ -372,7 +373,47 @@ public class Advanced {
 		System.out.println("Correct answer is " + answer);
 		printCorrect(answer.equals(response));
 
-		// add section that prompts user for a regex and checks it.
+		System.out.println("Now, it's your turn. Write a regex pattern that");
+		System.out.println("matches each word of the following: ");
+		List<String> toMatch = new ArrayList<>();
+		toMatch.add("HitmaN");
+		toMatch.add("GolF");
+		toMatch.add("PoTaToES");
+		toMatch.add("WordS");
+		toMatch.add("ManKinD");
+		System.out.print(toMatch);
+		System.out.println("But not these");
+
+		List<String> doNotMatch = new ArrayList<>();
+		doNotMatch.add("Hitman");
+		doNotMatch.add("With8numberS");
+		doNotMatch.add("startsWithLowercasE");
+		doNotMatch.add("alllowercase");
+		System.out.println(doNotMatch);
+		System.out.println("omit any flags, and only give the pattern; ");
+		System.out.println("not the //'s that surround it.");
+		System.out.print("response: ");
+		Pattern input = Pattern.compile(console.next());
+		boolean correct = true;
+
+		for(String match : toMatch) {
+			if (!input.matcher(match).matches()) {
+				correct = false;
+				break;
+			}
+		}
+
+		for(String match : doNotMatch) {
+			if(input.matcher(match).matches()) {
+				correct = false;
+				break;
+			}
+		}
+
+		System.out.println("Example of a correct response: ");
+		System.out.println("^[A-Z][a-zA-Z]*[A-Z]$");
+		printCorrect(correct);
+
 	}
 
 	/*
