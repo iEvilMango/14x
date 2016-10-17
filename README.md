@@ -1,12 +1,15 @@
 # 14x
-14x practice and extra material not covered in class
+14x practice and extra material not covered in class.
+
+
+**Nothing covered is done so in a conclusive or complete fashion; use it as a starting place, not as a complete guide.**
 
 
 ##Commands in Advanced.java:
 * "_print hello world_" -> prints "hello world!";
 * "_ternary_" -> mini - tutorial on the ternary operator;
 * "_binary_" -> mini - tutorial on binary representations;
-* "_regex_" -> mini tutorial on regular expressions;
+* "_regex_" -> mini - tutorial on regular expressions;
 * "_try/catch_" -> mini - tutorial on try / catch blocks;
 * "_xor_" -> mini - tutorial on xor (exclusive or);
 * "_lambda expressions_" -> mini - tutorial on lambda expressions;
@@ -25,5 +28,6 @@
 
 
 
-// fill in regex section to Advanced.java;
+// toDo: fill in regex section to Advanced.java; add markdown starter
+
 **Starter, not finished** 

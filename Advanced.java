@@ -327,9 +327,50 @@ public class Advanced {
 							+ " this method.]");
 	}
 
-
+	/*
+	Shows basic example of what regular expressions are, printing example to
+	console, and taking in user input to make it interactive
+	*/
 	public static void regex() {
-		// stub stub
+		Scanner console = new Scanner(System.in);
+		System.out.println("Regular expressions are a sequence of characters");
+		System.out.println("that define a search pattern. For the purposes of");
+		System.out.println("of this demo, I will be referring to regular expressions");
+		/* Regular expressions and regex are technically distinct items. 
+		For more information on this, see 
+		http://www.rexegg.com/regex-vs-regular-expression.html
+		*/
+		System.out.println("as regex(es) and they'll be of the form /PATTERN/flags");
+		waitForUser(console);
+		System.out.println("Let's start basic. We want to match only Strings that start");
+		System.out.println("with the letter A and end with Z, ignoring case.");
+		System.out.println("A regular expression for that is /^A.*Z$/i");
+		System.out.println();
+		System.out.println("That might seem scary, but lets go through it by character.");
+		System.out.println("^ : token being read starts here");
+		System.out.println("A : match the letter A");
+		System.out.println(". : matches any character");
+		System.out.println("* : match 0 or more of the previous thing");
+		System.out.println("    [Here: match 0 or more characters of any kind]");
+		System.out.println("Z : match the letter Z");
+		System.out.println("$ : the token being matched ends here");
+		System.out.println("i : flag that modifies the regex to ignore case (matches "
+								+ "a and z as well");
+		waitForUser(console);
+
+		System.out.println("There are way too many useful things to list them all;");
+		System.out.println("a quick cheatsheet can be found here:");
+		System.out.println("http://www.rexegg.com/regex-quickstart.html");
+		System.out.println("Using that as a reference, determine which");
+		System.out.println("String would be selected by the following regex:");
+		System.out.println("/([0-9a-z]).{2,4}\1/");
+		System.out.println("Strings to select from:");
+		System.out.println("[\"0FFFF0\", \"dsfsa\", \"ZdfdZ\", \"JdasD\", \"0F0\"]");
+		System.out.print("answer: ");
+		String response = console.next().trim();
+		String answer = "0FFFF0";
+		System.out.println("Correct answer is " + answer);
+		printCorrect(answer.equals(response));
 	}
 
 	/*
