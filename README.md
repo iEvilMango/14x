@@ -28,6 +28,6 @@
 
 
 
-// toDo: fill in regex section to Advanced.java; add markdown starter
+// toDo: add portion that requires user to write regexes; add markdown starter
 
 **Starter, not finished** 

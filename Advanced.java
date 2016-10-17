@@ -371,6 +371,8 @@ public class Advanced {
 		String answer = "0FFFF0";
 		System.out.println("Correct answer is " + answer);
 		printCorrect(answer.equals(response));
+
+		// add section that prompts user for a regex and checks it.
 	}
 
 	/*
