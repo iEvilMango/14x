@@ -220,7 +220,7 @@ public class Advanced {
 		System.out.println("The syntax for a lambda expression is");
 		System.out.println("argument list -> body of expression ");
 		System.out.println("An example lambda expression for adding"
-							+ "two values would be");
+							+ " two values would be");
 		System.out.println("(int x, int y) -> x + y;");
 		System.out.println("This takes in two parameters, x and y, and returns their sum");
 
@@ -236,6 +236,7 @@ public class Advanced {
 		Runnable hello = () -> { System.out.print("hello!"); } ;
 		System.out.println("answer is...");
 		hello.run();
+		System.out.println();
 		printCorrect(correct);
 
 		System.out.println();
@@ -373,6 +374,7 @@ public class Advanced {
 		System.out.println("Correct answer is " + answer);
 		printCorrect(answer.equals(response));
 
+		System.out.println();
 		System.out.println("Now, it's your turn. Write a regex pattern that");
 		System.out.println("matches each word of the following: ");
 		List<String> toMatch = new ArrayList<>();
@@ -381,7 +383,7 @@ public class Advanced {
 		toMatch.add("PoTaToES");
 		toMatch.add("WordS");
 		toMatch.add("ManKinD");
-		System.out.print(toMatch);
+		System.out.println(toMatch);
 		System.out.println("But not these");
 
 		List<String> doNotMatch = new ArrayList<>();
@@ -421,9 +423,10 @@ public class Advanced {
 	from the scanner, allowing the user to continue
 	*/
 	public static void waitForUser(Scanner input) {
-		System.out.println("[enter any String to continue]");
+		// System.out.println("[enter any String to continue]");
+		System.out.println("[Press enter to continue]");
 
-		input.next();
+		input.nextLine();
 		System.out.println();
 	}
 
