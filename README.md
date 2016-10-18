@@ -38,12 +38,12 @@ _Nothing covered is done so in a conclusive or complete fashion; use it as a sta
 * lambda expressions : Used in Graphical User Interfaces a lot. Less common in Java (only added recently), but can work some magic in other programming languages that use it.
 
 ##Other topics that are not covered in Advanced.java due to complexity (Still advanced material) 
-_Amazon Smile links provided for any books, same prices as amazon but a portion goes to a charity of your choice if you choose to purchase anything_
+_Amazon Smile links provided for any books, it has the same prices as amazon but a portion goes to a charity of your choice if you choose to purchase anything_
 * State machines : Used for many purposes, including videogame AI. [Programming Game AI by example goes into the subject](https://smile.amazon.com/Programming-Example-Wordware-Developers-Library/dp/1556220782/ref=sr_1_1?ie=UTF8&qid=1476825767&sr=8-1&keywords=video+game+ai+by), but has examples in c++. [There are java equivalents available here.](http://www.sallyx.org/sally/en/game-ai/) (this is on my kindle, but I haven't gotten to reading it yet.)
 * Python : Obviously, this can't be used on the homework :). But, it's an interesting language, that has some very cool properties, while sharing a good amount of structure with java. Google for a basic example, and you should be able to learn the basic syntax pretty quick. [I've read most of this book and highly recommend it for more advanced topics.](https://smile.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/ref=mt_kindle?_encoding=UTF8&me=)
 * GUI programming : Can get messy real quick, but kind of fun to learn about. If you want to stick with java here, I'd suggest either the Swing or JavaFX frameworks.
 * [This subreddit has a bunch of challenges, adding more at a rate of ~~ 3 a week. See if you can solve any!](https://www.reddit.com/r/dailyprogrammer)
 
-// toDo: add markdown starter, terminal / git starter
+// toDo: add markdown starter, terminal / git starter. Add exercises for items in Advanced.java
 
 **Starter, not finished** 
