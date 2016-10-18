@@ -4,7 +4,7 @@
 
 **Nothing covered is done so in a conclusive or complete fashion; use it as a starting place, not as a complete guide.**
 
-** Unless explicitly told otherwise, all concepts in Advanced.java are considered advanced material and strictly forbidden on assignments. Using them can and will result in a point penalty on your homework. ** 
+**Unless explicitly told otherwise, all concepts in Advanced.java are considered advanced material and strictly forbidden on assignments. Using them can and will result in a point penalty on your homework.** 
 
 
 ##Commands in Advanced.java:
