@@ -19,20 +19,22 @@ _Nothing covered is done so in a conclusive or complete fashion; use it as a sta
 
 
 ### Regular Expressions links
-[Find anything relating to regex!](http://lmgtfy.com/?q=regular+expressions)
+*[Find anything relating to regex!](http://lmgtfy.com/?q=regular+expressions)
 
-[Automatic regex golf player](http://regex.inginf.units.it/golf/)
+*[Automatic regex golf player](http://regex.inginf.units.it/golf/)
 
-[Regex tester, with highlight to explain](http://www.regexpal.com/)
+*[Regex tester, with highlight to explain](http://www.regexpal.com/)
 
 
 ###Uses for those things? [non-exhaustive, google is your friend]
 * printing hello world : hey, now you know what a switch statement is.
 * Ternary ? It can make code a little cleaner, and remove redundancy a bit : If you nest it too much like in the last example in Advanced, then it gets ugly really fast.
-* Binary : 01001001 01110100 00100111 01110011 00100000 01101101 01100001 01101001 01101110 01101100 01111001 00100000 01101010 01110101 01110011 01110100 00100000 01101001 01101110 01110100 01100101 01110010 01100101 01110011 01110100 01101001 01101110 01100111 00101110
+* Binary : 
+	01001001 01110100 00100111 01110011 00100000 01101101 01100001 01101001 01101110 01101100 01111001 00100000 01101010 01110101 01110011 01110100 00100000 01101001 01101110 01110100 01100101 01110010 01100101 01110011 01110100 01101001 01101110 01100111 00101110
+	[But there are actual uses, google it!]
 * Regex : grep some stuff up for fast searches that can be very particular.
 * try/catch : Because you don't always want to crash when something bad happens.
-* xor : Simply if conditions, make some things that seem like magic happen (What happens if you xor a number by the same number, twice?)
+* xor : Simply if conditions, make some things that seem like magic happen (What happens if you xor a number by the same number, twice?) and more
 * lambda expressions : Used in Graphical User Interfaces a lot. Less common in Java (only added recently), but can work some magic in other programming languages that use it.
 
 
