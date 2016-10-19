@@ -2,10 +2,13 @@
 14x practice and extra material not covered in class.
 
 ##Index
-*[Commands in Advanced.java](#commands-in-advancedjava)
-*[Links for more on regex](#regular-expressions-links)
-*[Uses for concepts in Advanced.java](#uses-for-those-things)
-*[Other topics](#other-topics)
+* [Commands in Advanced.java](#commands-in-advancedjava)
+
+* [Links for more on regex](#regular-expressions-links)
+
+* [Uses for concepts in Advanced.java](#uses-for-those-things)
+
+* [Other topics](#other-topics)
 
 _Nothing covered is done so in a conclusive or complete fashion; use it as a starting place, not as a complete guide. Start one, see if you can find uses for it, and then google to find more._
 
