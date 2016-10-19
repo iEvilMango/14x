@@ -29,11 +29,11 @@ _Nothing covered is done so in a conclusive or complete fashion; use it as a sta
 
 
 ### Regular Expressions links
-*[Find anything relating to regex!](http://lmgtfy.com/?q=regular+expressions)
+* [Find anything relating to regex!](http://lmgtfy.com/?q=regular+expressions)
 
-*[Automatic regex golf player](http://regex.inginf.units.it/golf/)
+* [Automatic regex golf player](http://regex.inginf.units.it/golf/)
 
-*[Regex tester, with highlight to explain](http://www.regexpal.com/)
+* [Regex tester, with highlight to explain](http://www.regexpal.com/)
 
 
 ###Uses for those things? 
