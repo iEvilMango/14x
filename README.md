@@ -1,10 +1,17 @@
 # 14x
 14x practice and extra material not covered in class.
 
+##Index
+*[Commands in Advanced.java](#commands-in-advancedjava)
+*[Links for more on regex](#regular-expressions-links)
+*[Uses for concepts in Advanced.java](#uses-for-those-things)
+*[Other topics](#other-topics)
 
 _Nothing covered is done so in a conclusive or complete fashion; use it as a starting place, not as a complete guide. Start one, see if you can find uses for it, and then google to find more._
 
 ###**Unless explicitly told otherwise, all concepts in Advanced.java are considered advanced material and strictly forbidden on assignments. Using them can and will result in a point penalty on your homework.** 
+
+
 
 
 ##Commands in Advanced.java:
@@ -26,7 +33,8 @@ _Nothing covered is done so in a conclusive or complete fashion; use it as a sta
 *[Regex tester, with highlight to explain](http://www.regexpal.com/)
 
 
-###Uses for those things? [non-exhaustive, google is your friend]
+###Uses for those things? 
+_[non-exhaustive, google is your friend]_
 * printing hello world : hey, now you know what a switch statement is.
 * Ternary ? It can make code a little cleaner, and remove redundancy a bit : If you nest it too much like in the last example in Advanced, then it gets ugly really fast.
 * Binary : 
@@ -37,7 +45,9 @@ _Nothing covered is done so in a conclusive or complete fashion; use it as a sta
 * xor : Simply if conditions, make some things that seem like magic happen (What happens if you xor a number by the same number, twice?) and more
 * lambda expressions : Used in Graphical User Interfaces a lot. Less common in Java (only added recently), but can work some magic in other programming languages that use it.
 
-##Other topics that are not covered in Advanced.java due to complexity (Still advanced material) 
+##Other topics
+***that are not covered in Advanced.java due to complexity (Still advanced material)***
+
 _Amazon Smile links provided for any books, it has the same prices as amazon but a portion goes to a charity of your choice if you choose to purchase anything_
 * State machines : Used for many purposes, including videogame AI. [Programming Game AI by example goes into the subject](https://smile.amazon.com/Programming-Example-Wordware-Developers-Library/dp/1556220782/ref=sr_1_1?ie=UTF8&qid=1476825767&sr=8-1&keywords=video+game+ai+by), but has examples in c++. [There are java equivalents available here.](http://www.sallyx.org/sally/en/game-ai/) (this is on my kindle, but I haven't gotten to reading it yet.) [Checkout this StackOverflow response too, after checking out regexes](http://stackoverflow.com/questions/525004/short-example-of-regular-expression-converted-to-a-state-machine)
 * Python : Obviously, this can't be used on the homework :). But, it's an interesting language, that has some very cool properties, while sharing a good amount of structure with java. Google for a basic example, and you should be able to learn the basic syntax pretty quick. [I've read most of this book and highly recommend it for more advanced topics. (It covers python 3, which I would suggest any new learner stick with)](https://smile.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/ref=mt_kindle?_encoding=UTF8&me=)
