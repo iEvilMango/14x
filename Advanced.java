@@ -252,6 +252,11 @@ public class Advanced {
 		System.out.println("answer is...");
 		runDouble(hello);
 		printCorrect(correct);
+		System.out.println("That's all for this guided, tutorial, but visit");
+		// Using Streams to... streamline... your code
+		System.out.println("http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/");
+		System.out.println("for an example of a particularly useful way of using");
+		System.out.println("java lambda expressions");
 
 	}
 
