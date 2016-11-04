@@ -15,12 +15,14 @@ __c.__ the cd command is for change directory; changes directory to the given di
 
 __d.__ parameter for cd; using relative pathing (from where I currently am), go into the 14x directory in the GitHub directory. The tilde symbol can be used to refer to the base directory (i.e. cd ~ or cd ~/GitHub). This is case sensitive.
 
+## ls
 ![ls to list directories](imgs/ls_dir(2).png)
 
 __a.__ the ls command lists the files (and directories) in the current directory. Here, it lists out all the things in the 14x directory.
 
 __b.__ the response from bash; that is, the things in the 14x directory that you got from the ls command
 
+## open and touch
 ![open, touch](imgs/open_touch_dir(3).png)
 
 __a.__ the open command, well, opens the given file / directory.
@@ -31,12 +33,14 @@ __c.__ the touch command adds a new file if it doesn't already exist, and if it 
 
 __d.__ listing the files out again shows that we have a new file in the directory
 
+## clear and mkdir
 ![clear](imgs/clear(4).png)
 
 __a.__ the clear command cleans up the console, 'clearing it' (technically a limited number of the commands are still stored if you use the scroll bar; this just makes it so you have a nice clean screen to look at) 
 
 __b.__ the mkdir command will make a new directory (folder).
 
+## java
 ![java in bash](imgs/java(5).png)
 
 __a.__ '..' refers to the parent directory (in this case, I was in the temp folder created in the previous image, and used .. to back out into the 14x folder). This can even be 'chained;' that is ../.. will refer to the parent's parent directory (grandparent?)
@@ -47,6 +51,7 @@ __c.__ java runs the Advanced class from the compiled .class file. Notice that i
 
 __d.__ the Advanced class being run in the terminal (and waiting for my input).
 
+## python
 ![python in bash](imgs/python_in_terminal(6).png)
 
 __a.__ python3 starts up the Python 3 interpreter. >>> is the terminal waiting for your Python commands.
@@ -56,5 +61,5 @@ __b.__ Python commands being run line by line. (quit() is the method you want to
 __note:__ if you just put in 'python' from bash, it will use the python 2 interpreter instead of python 3. Google python 3 vs python 2 for reasons to choose using one over the other; if you just start learning python, the only reason I would think you'd want to stay with 2.7 would be to use libraries that haven't been ported to 3.
 
 
-
+### git
 for information on using git in the terminal, this [page seems](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html) like a pretty good start.
