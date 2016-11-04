@@ -57,4 +57,4 @@ _Amazon Smile links provided for any books, it has the same prices as amazon but
 * GUI programming : Can get messy real quick, but kind of fun to learn about. If you want to stick with java here, I'd suggest either the Swing or JavaFX frameworks.
 * [This subreddit has a bunch of challenges, adding more at a rate of ~~ 3 a week. See if you can solve any!](https://www.reddit.com/r/dailyprogrammer)
 
-// toDo: add markdown starter, terminal / git starter / running java from terminal. Add exercises for items in Advanced.java
+// toDo: add markdown starter,  git starter. Add exercises for items in Advanced.java
