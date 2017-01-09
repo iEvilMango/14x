@@ -60,5 +60,3 @@ _Amazon Smile links provided for any books, it has the same prices as amazon but
 * Python : Obviously, this can't be used on the homework :). But, it's an interesting language, that has some very cool properties, while sharing a good amount of structure with java. Google for a basic example, and you should be able to learn the basic syntax pretty quick. [I've read most of this book and highly recommend it for more advanced topics. (It covers python 3, which I would suggest any new learner stick with)](https://smile.amazon.com/Fluent-Python-Luciano-Ramalho-ebook/dp/B0131L3PW4/ref=mt_kindle?_encoding=UTF8&me=) Additionally, [this section now has a small introduction to Python at the beginning.](APIs\ and\ Python/TA_Choice_joey.pdf)
 * GUI programming : Can get messy real quick, but kind of fun to learn about. If you want to stick with java here, I'd suggest either the Swing or JavaFX frameworks.
 * [This subreddit has a bunch of challenges, adding more at a rate of ~~ 3 a week. See if you can solve any!](https://www.reddit.com/r/dailyprogrammer)
-
-// toDo: add markdown starter,  git starter. Add exercises for items in Advanced.java
