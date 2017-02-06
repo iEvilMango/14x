@@ -61,3 +61,4 @@ _Amazon Smile links provided for any books, it has the same prices as amazon but
 * GUI programming : Can get messy real quick, but fun to learn about (especially if you plan on making any sort of application). If you want to stick with java here, I'd suggest either the Swing or JavaFX frameworks.
 * [This subreddit has a bunch of challenges, adding more at a rate of ~~ 3 a week. See if you can solve any!](https://www.reddit.com/r/dailyprogrammer)
 * [Blockchains and Coinbases (How Cyber-currency works)](https://www.youtube.com/watch?v=_160oMzblY8)
+* [Applying the Linus Torvalds “Good Taste” Coding Requirement](https://medium.com/@bartobri/applying-the-linus-tarvolds-good-taste-coding-requirement-99749f37684a#.37pai8fqc)
