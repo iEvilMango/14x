@@ -16,12 +16,12 @@
 
 _Nothing covered is done so in a conclusive or complete fashion; use it as a starting place, not as a complete guide. Start one, see if you can find uses for it, and then google to find more._
 
-###**Unless explicitly told otherwise, all new concepts in Advanced.java are considered advanced material and strictly forbidden on assignments. Using them can and will result in a point penalty on your homework.** 
+### **Unless explicitly told otherwise, all new concepts in Advanced.java are considered advanced material and strictly forbidden on assignments. Using them can and will result in a point penalty on your homework.** 
 
 
 
 
-##Commands in Advanced.java:
+## Commands in Advanced.java:
 * "_print hello world_" -> prints "hello world!";
 * "_ternary_" -> mini - tutorial on the ternary operator;
 * "_binary_" -> mini - tutorial on binary representations;
@@ -40,7 +40,7 @@ _Nothing covered is done so in a conclusive or complete fashion; use it as a sta
 * [Regex tester, with highlight to explain](http://www.regexpal.com/)
 
 
-###Uses for those things? 
+### Uses for those things? 
 _[non-exhaustive, google is your friend]_
 * printing hello world : hey, now you know what a switch statement is.
 * Ternary ? It can make code a little cleaner, and remove redundancy a bit : If you nest it too much like in the last example in Advanced, then it gets ugly really fast.
@@ -52,7 +52,7 @@ _[non-exhaustive, google is your friend]_
 * xor : Simply if conditions, make some things that seem like magic happen (What happens if you xor a number by the same number, twice?) and more
 * lambda expressions : Used in Graphical User Interfaces a lot. Less common in Java (only added recently), but can work some magic in other programming languages that use it.
 
-##Other topics
+## Other topics
 ***that are not covered in Advanced.java due to complexity (Still advanced material)***
 
 _Amazon Smile links provided for any books, it has the same prices as amazon but a portion goes to a charity of your choice if you choose to purchase anything_
