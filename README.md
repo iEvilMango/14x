@@ -1,7 +1,7 @@
 # 14x
 14x practice and extra material not covered in class.
 
-##Index
+## Index
 * [Commands in Advanced.java](#commands-in-advancedjava)
 
 * [Links for more on regex](#regular-expressions-links)
